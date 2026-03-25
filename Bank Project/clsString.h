@@ -1,6 +1,4 @@
 
-//ProgrammingAdvices.com
-//Mohammed Abu-Hadhoud
 
 #pragma once
 #include <iostream>
