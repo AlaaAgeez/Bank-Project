@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>C++ Banking System</title>
-</head>
-
 <body>
 
 <h1>🚀 C++ Banking System (Built from Scratch)</h1>
