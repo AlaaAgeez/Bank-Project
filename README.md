@@ -6,7 +6,7 @@
 ## 📌 Overview
 A complete console banking system built in C++ with a strong focus on Object-Oriented Programming and clean, modular design.
 
-It was built as the final project of a C++ OOP course, with every part of the system implemented from scratch using only the C++ Standard Library (no external dependencies).
+Every part of the system is implemented from scratch using only the C++ Standard Library (no external dependencies).
 
 The system simulates a realistic banking environment: clients, accounts, users, currencies, transfers, permissions, and activity logging.
 
@@ -19,7 +19,7 @@ The system simulates a realistic banking environment: clients, accounts, users, 
 - **Currencies:** Store, update, and convert between currencies with exchange rates.
 - **Logging & Monitoring:** Transfers, logins, and user activities tracked in .txt log files.
 - **Security:** Restricted access to sensitive screens and active user session control.
-- **File-Based Persistence:** Clients.txt, Users.txt, Currencies.txt and log files act as a simulated database.
+- **File-Based Persistence:** Clients.txt, Users.txt and log files act as a simulated database.
 - **Utilities:** Custom utility classes (clsString, clsDate, clsInputValidate, clsUtil) for parsing, validation, and date handling.
 
 ---
@@ -58,7 +58,7 @@ Sample users are stored in `Bank Project/Users.txt`, for example:
 - `clsMainScreen` + screen classes (`cls*Screen.h`) - UI screens, all inheriting from `clsScreen`
 - `clsBankClient.h`, `clsUser.h`, `clsPerson.h` - core domain classes
 - `clsString.h`, `clsDate.h`, `clsInputValidate.h`, `clsUtil.h` - utility classes
-- `Clients.txt`, `Users.txt`, `Currencies.txt` - file-based data store
+- `Clients.txt`, `Users.txt` - file-based data store
 - `TransferLog.txt`, `LoginRegister.txt` - activity logs
 
 ---
