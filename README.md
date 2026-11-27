@@ -1,89 +1,67 @@
-<body>
+# 🏦 C++ Banking System
+**C++ | OOP | Console Application | File-Based Persistence**
 
-<h1>🚀 C++ Banking System (Built from Scratch)</h1>
+---
 
-<p>
-It showcases the main system features and flow.
-</p>
+## 📌 Overview
+A complete console banking system built in C++ with a strong focus on Object-Oriented Programming and clean, modular design.
 
-<p>
-I’ve built a complete banking system from scratch using C++, focusing strongly on Object-Oriented Programming (OOP) and clean, modular design.
-</p>
+It was built as the final project of a C++ OOP course, with every part of the system implemented from scratch using only the C++ Standard Library (no external dependencies).
 
-<p>
-No external libraries were used (except STL vector) — everything was handcrafted manually for learning and precision.
-</p>
+The system simulates a realistic banking environment: clients, accounts, users, currencies, transfers, permissions, and activity logging.
 
-<h2>💡 Key Features</h2>
+---
 
-<ul>
-  <li><b>Clients Management:</b> Add, edit, delete, and search clients with full balance tracking.</li>
-  <li><b>Bank Accounts:</b> Handle deposits, withdrawals, and internal transfers with real-time balance updates.</li>
-  <li><b>User Management:</b> Multi-user system with username/password and role-based access control (implemented via binary enums + bitwise checks).</li>
-  <li><b>Currencies:</b> Store, update, and convert between currencies dynamically with up-to-date exchange rates.</li>
-  <li><b>Logging & Monitoring:</b> Tracks all transfers, logins, and user activities in .txt log files.</li>
-  <li><b>Security:</b> Encrypted passwords, restricted access to sensitive screens, and active user session control.</li>
-  <li><b>File-Based Database Simulation:</b> Full text-file-based persistence system (Clients.txt, Users.txt, Currencies.txt, etc.).</li>
-  <li><b>Utilities:</b> Custom utility classes such as clsString, clsDate, clsInputValidate, and clsUtil for parsing, validation, and date handling.</li>
-</ul>
+## ✨ Key Features
+- **Clients Management:** Add, edit, delete, and search clients with full balance tracking.
+- **Bank Accounts:** Deposits, withdrawals, and internal transfers with real-time balance updates.
+- **User Management:** Multi-user system with username/password and role-based access control (binary enums + bitwise permission checks).
+- **Currencies:** Store, update, and convert between currencies with exchange rates.
+- **Logging & Monitoring:** Transfers, logins, and user activities tracked in .txt log files.
+- **Security:** Restricted access to sensitive screens and active user session control.
+- **File-Based Persistence:** Clients.txt, Users.txt, Currencies.txt and log files act as a simulated database.
+- **Utilities:** Custom utility classes (clsString, clsDate, clsInputValidate, clsUtil) for parsing, validation, and date handling.
 
-<h2>🧠 OOP Concepts Implemented</h2>
+---
 
-<ul>
-  <li><b>Encapsulation:</b> Secure handling of all data within classes.</li>
-  <li><b>Inheritance:</b> Each screen inherits from a common base clsScreen class.</li>
-  <li><b>Polymorphism & Abstraction:</b> Used across UI screens to create flexibility and scalability.</li>
-</ul>
+## 🧠 OOP Concepts Implemented
+- **Encapsulation:** All data handled securely inside classes.
+- **Inheritance:** Every screen inherits from a common `clsScreen` base class.
+- **Polymorphism & Abstraction:** Used across UI screens for flexibility and scalability.
 
-<h2>🧾 Project Overview</h2>
+---
 
-<p>
-This project simulates a realistic banking environment, including:
-clients, accounts, users, currencies, transfers, security mechanisms, and file-based persistence.
-</p>
+## 🧰 Technology Stack
+- C++ (Standard Library only)
+- Visual Studio 2022
 
-<p>
-It’s a complete system designed to mimic how a real-world banking application operates — fully coded from scratch in C++ with pure OOP principles.
-</p>
+---
 
-<h2>🔐 Security Highlights</h2>
+## ▶️ Getting Started
 
-<ul>
-  <li>Passwords are encrypted before being stored.</li>
-  <li>Restricted access to admin-only features.</li>
-  <li>Session-based active user tracking.</li>
-  <li>Bitwise permission system for different roles.</li>
-</ul>
+### 1️⃣ Requirements
+- Windows + Visual Studio 2022 (C++ workload)
 
-<h2>🧰 Technologies Used</h2>
+### 2️⃣ Build & Run
+1. Open `Bank Project.sln` in Visual Studio.
+2. Build the solution and run.
 
-<ul>
-  <li><b>Language:</b> C++</li>
-  <li><b>Paradigm:</b> Object-Oriented Programming</li>
-  <li><b>Data Storage:</b> Text File-Based Database</li>
-  <li><b>Tools:</b> Visual Studio</li>
-</ul>
+### 3️⃣ Demo Login
+Sample users are stored in `Bank Project/Users.txt`, for example:
+- Username: `User1` - Password: `1234` (full permissions)
+- Username: `User2` - Password: `1234`
 
-<h2>👤 Test User Account</h2>
+---
 
-<p>
-To explore and test the system, you can log in using the default admin account:
-</p>
+## 📂 Project Structure
+- `Bank Project.cpp` - program entry point
+- `clsMainScreen` + screen classes (`cls*Screen.h`) - UI screens, all inheriting from `clsScreen`
+- `clsBankClient.h`, `clsUser.h`, `clsPerson.h` - core domain classes
+- `clsString.h`, `clsDate.h`, `clsInputValidate.h`, `clsUtil.h` - utility classes
+- `Clients.txt`, `Users.txt`, `Currencies.txt` - file-based data store
+- `TransferLog.txt`, `LoginRegister.txt` - activity logs
 
-<pre>
-Username: User1  
-Password: 1234
-</pre>
+---
 
-<p>
-⚠️ This account is for demonstration purposes only and gives full access to all system features.
-</p>
-
-<h2>💬 Feedback</h2>
-
-<p>
-I’m open to feedback and suggestions for improvement — feel free to open an issue or reach out on LinkedIn!
-</p>
-
-</body>
-</html>
+## 📝 Notes
+This is a learning project: data is stored in plain-text files to simulate a database, and sample passwords are visible in those files. A production system would use a real database and hashed passwords.
